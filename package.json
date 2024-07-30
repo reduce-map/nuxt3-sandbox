@@ -1,5 +1,11 @@
 {
   "name": "nuxt-app",
+  "dependencies": {
+    "@nuxtjs/i18n": "^8.3.3",
+    "nuxt": "^3.12.4",
+    "nuxt-vue3-google-signin": "^0.0.11",
+    "vue": "latest"
+  },
   "private": true,
   "type": "module",
   "scripts": {
@@ -8,10 +14,5 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
-  },
-  "dependencies": {
-    "@nuxtjs/i18n": "^8.3.3",
-    "nuxt": "^3.12.4",
-    "vue": "latest"
   }
 }
