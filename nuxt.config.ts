@@ -47,7 +47,7 @@ export default defineNuxtConfig({
         file: 'fr-FR.ts'
       }
     ],
-    baseUrl: 'https://my-nuxt-app.com', // https://v8.i18n.nuxtjs.org/guide/seo#requirements
+    baseUrl: process.env.NUXT_BASE_URL, // https://v8.i18n.nuxtjs.org/guide/seo#requirements
 
     experimental: {
       localeDetector: './localeDetector.ts',
