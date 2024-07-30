@@ -1,18 +1,23 @@
 {
   "name": "nuxt-app",
-  "dependencies": {
-    "@nuxtjs/i18n": "^8.3.3",
-    "nuxt": "^3.12.4",
-    "nuxt-vue3-google-signin": "^0.0.11",
-    "vue": "latest"
-  },
   "private": true,
   "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "preview": "nuxt preview"
+  },
+  "dependencies": {
+    "@nuxt/content": "^2.13.2",
+    "@nuxt/kit": "^3.12.4",
+    "@nuxt/ui": "^2.18.3",
+    "@nuxtjs/i18n": "^8.3.3",
+    "axios": "^1.7.2",
+    "googleapis": "^140.0.1",
+    "nuxt": "^3.12.4",
+    "nuxt-vue3-google-signin": "^0.0.11",
+    "vue": "latest"
   }
 }

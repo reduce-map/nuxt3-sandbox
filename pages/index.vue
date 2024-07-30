@@ -12,12 +12,17 @@ const switchLocalePath = useSwitchLocalePath()
 const availableLocales = computed(() => {
   return (locales.value).filter(i => i.code !== locale.value)
 })
+
+const { $searchItems } = useNuxtApp()
 </script>
 
 <template>
   <div>
     <p>{{ t('pages.title.top') }}</p>
     <p>{{ t('pages.title.about') }}</p>
+    <div>
+      {{ $searchItems }}
+    </div>
     <nav>
       <template v-for="(locale, index) in availableLocales" :key="locale.code">
         <template v-if="index"> | </template>

@@ -79,4 +79,20 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 - https://ogp.me/#optional
 - https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites?visit_id=638578908787521247-2195991382&rd=1&hl=ru#dup-content
 - https://nuxt.com/docs/getting-started/seo-meta#components
-- 
+
+## MAKE DONE
+
+I 
+- [ ] Vercel. vercel.json 
+  - [ ] Staging and Production. 
+  - [ ] Dev Login check
+- [ ] GTM (prod staging dev think)
+- [ ]
+
+II
+- [ ] 
+
+III
+- [ ] 
+
+Done 🫡🚀
