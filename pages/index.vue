@@ -20,9 +20,12 @@ const { $searchItems } = useNuxtApp()
   <div>
     <p>{{ t('pages.title.top') }}</p>
     <p>{{ t('pages.title.about') }}</p>
-    <div>
-      {{ $searchItems }}
-    </div>
+
+    <FilterForm />
+    <nuxt-link to="/q">Go to search results</nuxt-link>
+<!--    <div>-->
+<!--      {{ $searchItems }}-->
+<!--    </div>-->
     <nav>
       <template v-for="(locale, index) in availableLocales" :key="locale.code">
         <template v-if="index"> | </template>

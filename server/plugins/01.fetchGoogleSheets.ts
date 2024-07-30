@@ -16,7 +16,6 @@ export default defineNitroPlugin(async () => {
 
   async function fetchSettings() {
     try {
-      // Попытка прочитать данные из локального JSON-файла
       const jsonFilePath = join(process.cwd(), 'search.json')
       const data = await fs.readFile(jsonFilePath, 'utf-8')
       await storage.setItem('data', JSON.parse(data))
