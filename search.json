@@ -1,0 +1,127 @@
+{
+  "range": "search!A1:Z1000",
+  "majorDimension": "ROWS",
+  "values": [
+    [
+      "Point",
+      "Reviews",
+      "Rating",
+      "Distance",
+      "Hours",
+      "City",
+      "Address",
+      "Registered",
+      "Min Wholesale"
+    ],
+    [
+      "Golden Exchange",
+      "33",
+      "4.5",
+      "2 km",
+      "09:00-19:00",
+      "Kyiv",
+      "Khreschatyk St, 15",
+      "Yes",
+      "1000 USD"
+    ],
+    [
+      "Safe Currency",
+      "28",
+      "4.7",
+      "3 km",
+      "10:00-18:00",
+      "Kyiv",
+      "Velyka Vasylkivska St, 23",
+      "No",
+      "500 USD"
+    ],
+    [
+      "MoneyHouse",
+      "42",
+      "4.2",
+      "1.5 km",
+      "09:00-20:00",
+      "Kyiv",
+      "Bessarabska Square, 2",
+      "Yes",
+      "750 USD"
+    ],
+    [
+      "TrustExchange",
+      "19",
+      "4",
+      "4 km",
+      "08:00-17:00",
+      "Kyiv",
+      "Zhylianska St, 54",
+      "No",
+      "1000 USD"
+    ],
+    [
+      "ExchangeCity",
+      "25",
+      "4.8",
+      "2.5 km",
+      "09:00-21:00",
+      "Kyiv",
+      "Volodymyrska St, 60",
+      "Yes",
+      "1200 USD"
+    ],
+    [
+      "Profit Exchange",
+      "37",
+      "4.6",
+      "3.5 km",
+      "10:00-18:30",
+      "Kyiv",
+      "Tarasa Shevchenko Blvd, 8",
+      "No",
+      "950 USD"
+    ],
+    [
+      "CashFlow",
+      "44",
+      "4.3",
+      "2 km",
+      "09:00-20:30",
+      "Kyiv",
+      "Saksahanskoho St, 20/22",
+      "Yes",
+      "1100 USD"
+    ],
+    [
+      "BestRates",
+      "30",
+      "4.5",
+      "2.8 km",
+      "10:00-19:30",
+      "Kyiv",
+      "Pavla Tychyny Ave, 7",
+      "No",
+      "600 USD"
+    ],
+    [
+      "CurrencyPro",
+      "22",
+      "4.1",
+      "3 km",
+      "09:00-17:30",
+      "Kyiv",
+      "Pechersk Lavra, Lavrska St, 15",
+      "Yes",
+      "850 USD"
+    ],
+    [
+      "MoneyXchange",
+      "18",
+      "4.4",
+      "4.5 km",
+      "08:00-16:00",
+      "Kyiv",
+      "Podil, Kontraktova Square, 10",
+      "No",
+      "1000 USD"
+    ]
+  ]
+}

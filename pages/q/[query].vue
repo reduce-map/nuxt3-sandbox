@@ -1,10 +1,10 @@
 <template>
   <div>
-    <h1>Search Results</h1>
+    <h1>Search Results for {{ query }} {{ queryParams }}</h1>
     <div v-if="filteredResults.length">
       <ul>
         <li v-for="(item, index) in filteredResults" :key="index">
-          <nuxt-link :to="`/sheet/${index}`">{{ item.join(', ') }}</nuxt-link>
+          <NuxtLink :to="`/sheet/${index}`">{{ item.join(', ') }}</NuxtLink>
         </li>
       </ul>
     </div>
@@ -20,7 +20,12 @@ import { useRoute } from 'vue-router'
 import { useFetch } from '#app'
 
 const route = useRoute()
-const query = ref(route.query)
+// const query = ref(route.params.query)
+
+const query = ref(route.params.query)
+const queryParams = ref(route.query)
+// const query = ref(route.params.)
+
 const { data: sheetData } = await useFetch('/api/search-items')
 
 const filteredResults = computed(() => {
@@ -29,9 +34,9 @@ const filteredResults = computed(() => {
   const items = sheetData.value.values.slice(1)
 
   return items.filter(item => {
-    return Object.keys(query.value).every(key => {
+    return Object.keys(route.query).every(key => {
       const index = headers.indexOf(key)
-      return index !== -1 && item[index]?.toLowerCase().includes(query.value[key].toLowerCase())
+      return index !== -1 && item[index]?.toLowerCase().includes(route.query[key].toLowerCase())
     })
   })
 })
