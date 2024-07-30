@@ -30,14 +30,15 @@ const { data: sheetData } = await useFetch('/api/search-items')
 
 const filteredResults = computed(() => {
   if (!sheetData.value || !sheetData.value.values) return []
-  const headers = sheetData.value.values[0]
+  // const headers = sheetData.value.values[0]
   const items = sheetData.value.values.slice(1)
 
-  return items.filter(item => {
-    return Object.keys(route.query).every(key => {
-      const index = headers.indexOf(key)
-      return index !== -1 && item[index]?.toLowerCase().includes(route.query[key].toLowerCase())
-    })
-  })
+  // return items.filter(item => {
+  //   return Object.keys(route.query).every(key => {
+  //     const index = headers.indexOf(key)
+  //     return index !== -1 && item[index]?.toLowerCase().includes(route.query[key].toLowerCase())
+  //   })
+  // })
+  return items
 })
 </script>
