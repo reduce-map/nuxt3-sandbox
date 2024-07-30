@@ -1,8 +1,8 @@
 // import { useLogger } from '@nuxt/kit'
 // import type { Settings } from '@/types/api'
 
-import { promises as fs } from 'fs'
-import { join } from 'path'
+// import { promises as fs } from 'fs'
+// import { join } from 'path'
 
 export default defineNitroPlugin(async () => {
   const storage = useStorage('SEARCH_ITEMS')
@@ -11,10 +11,11 @@ export default defineNitroPlugin(async () => {
     // console.log(endpoint)
     const spreadsheetId = process.env.GOOGLE_SHEETS_SPREADSHEET_ID
     const apiKey = process.env.GOOGLE_SHEETS_KEY
+    console.log(spreadsheetId, apiKey)
     const tableName = 'search'
     const result = await $fetch(`https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${tableName}?key=${apiKey}`)
-    await storage.setItem('settings', result as any)
-    // console.log(`Settings fetched succesfully!`, result)
+    await storage.setItem('data', result as any)
+    console.log(`Settings fetched succesfully!`, result)
   }
 
   // async function fetchSettings() {
