@@ -2,11 +2,10 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
-  modules: [
-    "@nuxtjs/i18n",
-    "nuxt-vue3-google-signin"
-
-  ],
+  modules: ["@nuxtjs/i18n", "nuxt-vue3-google-signin", "@nuxt/content", "@nuxt/ui"],
+  // plugins: [
+  //   '~/plugins/googleSheets.ts',
+  // ],
 
   googleSignIn: {
     clientId: process.env.NUXT_PUBLIC_GOOGLE_CLIENT_ID
@@ -68,7 +67,6 @@ export default defineNuxtConfig({
   },
 
   experimental: {
-
     // jsTsFormatResource: true
   },
 
